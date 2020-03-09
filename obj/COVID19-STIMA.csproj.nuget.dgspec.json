@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/raha/Downloads/Strategi Algoritma/Tubes2/COVID19-STIMA/COVID19-STIMA.csproj": {}
+  },
+  "projects": {
+    "/home/raha/Downloads/Strategi Algoritma/Tubes2/COVID19-STIMA/COVID19-STIMA.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/raha/Downloads/Strategi Algoritma/Tubes2/COVID19-STIMA/COVID19-STIMA.csproj",
+        "projectName": "COVID19-STIMA",
+        "projectPath": "/home/raha/Downloads/Strategi Algoritma/Tubes2/COVID19-STIMA/COVID19-STIMA.csproj",
+        "packagesPath": "/home/raha/.nuget/packages/",
+        "outputPath": "/home/raha/Downloads/Strategi Algoritma/Tubes2/COVID19-STIMA/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/raha/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
