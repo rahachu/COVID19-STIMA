@@ -686,28 +686,26 @@
     ]
   },
   "packageFolders": {
-    "/home/raha/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Rakha Fadhilah\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/raha/Downloads/Strategi Algoritma/Tubes2/COVID19-STIMA/COVID19-STIMA.csproj",
+      "projectUniqueName": "C:\\Users\\Rakha Fadhilah\\Desktop\\Belajar\\semester_4\\stima\\COVID19-STIMA\\COVID19-STIMA.csproj",
       "projectName": "COVID19-STIMA",
-      "projectPath": "/home/raha/Downloads/Strategi Algoritma/Tubes2/COVID19-STIMA/COVID19-STIMA.csproj",
-      "packagesPath": "/home/raha/.nuget/packages/",
-      "outputPath": "/home/raha/Downloads/Strategi Algoritma/Tubes2/COVID19-STIMA/obj/",
+      "projectPath": "C:\\Users\\Rakha Fadhilah\\Desktop\\Belajar\\semester_4\\stima\\COVID19-STIMA\\COVID19-STIMA.csproj",
+      "packagesPath": "C:\\Users\\Rakha Fadhilah\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Rakha Fadhilah\\Desktop\\Belajar\\semester_4\\stima\\COVID19-STIMA\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "/home/raha/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Rakha Fadhilah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -732,10 +730,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
