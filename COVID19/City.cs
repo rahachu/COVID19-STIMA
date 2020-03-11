@@ -23,7 +23,7 @@ namespace COVID19
             StreamReader sr = new StreamReader(dir);
             string[] readed = sr.ReadLine().Split(' ');
             int n = int.Parse(readed[0]);
-            start = readed[1];s
+            start = readed[1];
             for(int i = 0;i < n; i++)
             {
                 string[] temp = sr.ReadLine().Split(' ');
