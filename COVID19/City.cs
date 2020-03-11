@@ -9,16 +9,11 @@ namespace COVID19
 {
     class City
     {
-        public Dictionary<string, int> cityCollection;
-        public string start;
+        public static Dictionary<string, int> cityCollection = new Dictionary<string, int>();
+        public static string start;
 
-        //constructor
-        public City()
-        {
-            cityCollection = new Dictionary<string, int>();
-        }
 
-        public void importCity(string dir)
+        public static void importCity(string dir)
         {
             StreamReader sr = new StreamReader(dir);
             string[] readed = sr.ReadLine().Split(' ');
@@ -30,5 +25,17 @@ namespace COVID19
                 cityCollection.Add(temp[0], int.Parse(temp[1]));
             }
         }
+
+        public static int P(string cityName)
+        {
+            return cityCollection[cityName];
+        }
+
+        public static double I(string cityName,int tCity)
+        {
+            int p = P(cityName);
+            return  p / (1 + (p - 1)*Math.Pow(2.71828,-0.25*tCity));
+        }
+
     }
 }
