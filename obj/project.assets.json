@@ -686,19 +686,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rakha Fadhilah\\.nuget\\packages\\": {}
+    "C:\\Users\\CAHYA YUGANSYAH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rakha Fadhilah\\Desktop\\Belajar\\semester_4\\stima\\COVID19-STIMA\\COVID19-STIMA.csproj",
+      "projectUniqueName": "C:\\Users\\CAHYA YUGANSYAH\\Desktop\\Rakha\\COVID19-STIMA\\COVID19-STIMA.csproj",
       "projectName": "COVID19-STIMA",
-      "projectPath": "C:\\Users\\Rakha Fadhilah\\Desktop\\Belajar\\semester_4\\stima\\COVID19-STIMA\\COVID19-STIMA.csproj",
-      "packagesPath": "C:\\Users\\Rakha Fadhilah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rakha Fadhilah\\Desktop\\Belajar\\semester_4\\stima\\COVID19-STIMA\\obj\\",
+      "projectPath": "C:\\Users\\CAHYA YUGANSYAH\\Desktop\\Rakha\\COVID19-STIMA\\COVID19-STIMA.csproj",
+      "packagesPath": "C:\\Users\\CAHYA YUGANSYAH\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CAHYA YUGANSYAH\\Desktop\\Rakha\\COVID19-STIMA\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rakha Fadhilah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CAHYA YUGANSYAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
