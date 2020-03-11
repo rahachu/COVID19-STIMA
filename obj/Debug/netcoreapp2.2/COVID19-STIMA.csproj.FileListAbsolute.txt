@@ -1,0 +1,7 @@
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stima\COVID19-STIMA\obj\Debug\netcoreapp2.2\COVID19-STIMA.csprojAssemblyReference.cache
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stima\COVID19-STIMA\obj\Debug\netcoreapp2.2\COVID19-STIMA.AssemblyInfoInputs.cache
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stima\COVID19-STIMA\obj\Debug\netcoreapp2.2\COVID19-STIMA.AssemblyInfo.cs
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stima\COVID19-STIMA\bin\Debug\netcoreapp2.2\COVID19-STIMA.deps.json
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stima\COVID19-STIMA\bin\Debug\netcoreapp2.2\COVID19-STIMA.runtimeconfig.json
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stima\COVID19-STIMA\bin\Debug\netcoreapp2.2\COVID19-STIMA.runtimeconfig.dev.json
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stima\COVID19-STIMA\bin\Debug\netcoreapp2.2\COVID19-STIMA.dll

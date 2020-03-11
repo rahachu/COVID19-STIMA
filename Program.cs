@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Msagl.Drawing;
+using Microsoft.Msagl;
+using Microsoft.Msagl.GraphViewerGdi;
+
 namespace Tubes2
 {
 
@@ -14,6 +18,8 @@ namespace Tubes2
         public int dayStart;
         public bool tular = false;
         private readonly Dictionary<KeyValuePair<City, City>, double> tr;
+        public readonly Dictionary<City, List<City>> graph;
+        public Graph Graph;
 
         City(string name, int population, int chance, bool tular)
         {
@@ -43,7 +49,6 @@ namespace Tubes2
             //            double ketularan;
             //           ketularan = A.population / (1 + Math.Pow(((A.population - 1) * e), 0.25 * totalWaktu));
             //            return ketularan;
-
         }
 
         public static int t(int T, int startDay)
@@ -66,7 +71,31 @@ namespace Tubes2
             }
             return hasil > 1;
         }
+        public void T(City A)
+        {
+            int time;
+            time = (int)(20 / (A.population * Tr(this, A)));
+            A.dayStart = time;
+        }
+        public void AddEdge(City A, City B, double P)
+        {
+            if (!graph.ContainsKey(A))
+            {
+                graph.Add(A, new List<City>());
+            }
+            if (!graph.ContainsKey(B))
+            {
+                graph.Add(B, new List<City>());
+            }
+            Graph.AddEdge(A.GetName(), B.GetName());
+            graph[A].Add(B);
+            tr.Add(new KeyValuePair<City, City>(A, B), P);
+        }
+
+
     }
+
+
 
 
 
