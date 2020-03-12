@@ -9,7 +9,7 @@ namespace COVID19
 {
     class CityLogistic
     {
-        Dictionary<KeyValuePair<String, String>, float> val;
+        Dictionary<KeyValuePair<string, string>, float> val;
 
         public CityLogistic()
         {
@@ -29,5 +29,19 @@ namespace COVID19
                 val.Add(cityPair, float.Parse(a[2]));
             }
         }
+
+        public float getTr(string from, string to)
+        {
+            return val[new KeyValuePair<string,string>(from,to)];
+        }
+
+
+        public float S(string from, string to, int dayLeft)
+        {
+            //𝑆(𝐴,𝐵) = 𝐼(𝑃(𝐴),𝑡(𝐴)) × 𝑇𝑟(𝐴,𝐵)
+            return I(from, dayLeft) * getTr(from,to);  
+        }
+
+
     }
 }
