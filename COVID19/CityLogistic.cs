@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Globalization;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +12,9 @@ namespace COVID19
     {
 
         public static Dictionary<string, string[]> cityEdge = new Dictionary<string, string[]>();
-        public static Dictionary<KeyValuePair<String, String>, float> val = new Dictionary<KeyValuePair<string, string>, float>();
+        public static Dictionary<KeyValuePair<String, String>, double> val = new Dictionary<KeyValuePair<string, string>, double>();
         public static Dictionary<string, int> timeFirst = new Dictionary<string, int>();
+        public static List<string> infected = new List<string>();
 
 
 
@@ -26,16 +28,24 @@ namespace COVID19
             for(int i = 0; i < n; i++)
             {
                 string[] a = sr.ReadLine().Split(' ');
-                cityEdge[a[0]].Append(a[1]);
-                val.Add(new KeyValuePair<string, string>(a[0], a[1]), float.Parse(a[2]));
+                if (cityEdge.ContainsKey(a[0]))
+                {
+                    cityEdge[a[0]].Append(a[1]);
+                }
+                else
+                {
+                    string[] init = { a[1] };
+                    cityEdge.Add(a[0], init);
+                }
+                val.Add(new KeyValuePair<string, string>(a[0], a[1]), double.Parse(a[2],CultureInfo.InvariantCulture));
             }
         }
 
         public static void BFS(int Time)
         {
-            string[] infected = { City.start };
             Queue<string> visiting = new Queue<string>();
             visiting.Enqueue(City.start);
+            infected.Add(City.start);
 
             while (visiting.Count > 0)
             {
@@ -45,7 +55,7 @@ namespace COVID19
                     if (S(nowVisit, newVisit,Time) > 1)
                     {
                         visiting.Enqueue(newVisit);
-                        infected.Append(newVisit);
+                        infected.Add(newVisit);
                         int tFirst = Time;
                         while (S(nowVisit, newVisit, tFirst) > 1)
                         {
@@ -70,7 +80,7 @@ namespace COVID19
         public static double Tr(string a, string b)
         {
             KeyValuePair<string, string> temp = new KeyValuePair<string, string>(a, b);
-            float nilai=0;
+            double nilai=0;
             if (val.TryGetValue(temp, out nilai))
             {
                 return nilai;
