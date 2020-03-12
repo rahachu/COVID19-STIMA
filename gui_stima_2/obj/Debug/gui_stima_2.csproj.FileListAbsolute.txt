@@ -16,3 +16,20 @@ C:\Users\raha\Documents\STIMA\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.Prop
 C:\Users\raha\Documents\STIMA\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.csproj.GenerateResource.cache
 C:\Users\raha\Documents\STIMA\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.exe
 C:\Users\raha\Documents\STIMA\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.pdb
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\bin\Debug\gui_stima_2.exe.config
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\bin\Debug\gui_stima_2.exe
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\bin\Debug\gui_stima_2.pdb
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.csprojAssemblyReference.cache
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.Form1.resources
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.Properties.Resources.resources
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.csproj.GenerateResource.cache
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.exe
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.pdb
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\bin\Debug\AutomaticGraphLayout.dll
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.dll
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.Drawing.dll
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.xml
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.Drawing.xml
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.csproj.CopyComplete
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.GraphViewerGdi.dll
+C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.GraphViewerGdi.xml

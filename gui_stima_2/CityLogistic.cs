@@ -5,17 +5,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Msagl.Drawing;
 
 namespace gui_stima_2
 {
     class CityLogistic
     {
-
+        public static Graph graf = new Graph();
         public static Dictionary<string, string[]> cityEdge = new Dictionary<string, string[]>();
         public static Dictionary<KeyValuePair<String, String>, double> val = new Dictionary<KeyValuePair<string, string>, double>();
         public static Dictionary<string, int> timeFirst = new Dictionary<string, int>();
         public static List<string> infected = new List<string>();
-
+        public static Dictionary<City, List<City>> connection;        
 
 
         public static void ImportLogistic(string dir)
@@ -31,11 +32,13 @@ namespace gui_stima_2
                 if (cityEdge.ContainsKey(a[0]))
                 {
                     cityEdge[a[0]].Append(a[1]);
+                    graf.AddEdge(a[0], a[1]);
                 }
                 else
                 {
                     string[] init = { a[1] };
                     cityEdge.Add(a[0], init);
+                    graf.AddEdge(a[0], a[1]);
                 }
                 val.Add(new KeyValuePair<string, string>(a[0], a[1]), double.Parse(a[2],CultureInfo.InvariantCulture));
             }
@@ -54,9 +57,11 @@ namespace gui_stima_2
                 {
                     if (S(nowVisit, newVisit,Time) > 1)
                     {
+                        graf.FindNode(newVisit).Attr.FillColor = Color.Red;
                         visiting.Enqueue(newVisit);
                         infected.Add(newVisit);
                         int tFirst = Time;
+                            
                         while (S(nowVisit, newVisit, tFirst) > 1)
                         {
                             tFirst--;

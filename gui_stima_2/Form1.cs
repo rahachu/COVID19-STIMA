@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Microsoft.Msagl;
 
 namespace gui_stima_2
 {
     public partial class Form1 : Form
     {
-        
+        public static Microsoft.Msagl.GraphViewerGdi.GViewer viewer = new Microsoft.Msagl.GraphViewerGdi.GViewer();
+
         public Form1()
         {
             InitializeComponent();
@@ -99,6 +101,12 @@ namespace gui_stima_2
         private void button_simulate_Click(object sender, EventArgs e)
         {
             CityLogistic.BFS(comboBox1.SelectedIndex);
+            viewer.Graph = CityLogistic.graf;
+            panel_msagl.SuspendLayout();
+            viewer.Dock = DockStyle.Fill;
+            panel_msagl.Controls.Clear();
+            panel_msagl.Controls.Add(viewer);
+            panel_msagl.ResumeLayout();
         }
     }
 }
