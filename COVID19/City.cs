@@ -10,7 +10,9 @@ namespace COVID19
     class City
     {
         public static Dictionary<string, int> cityCollection = new Dictionary<string, int>();
+        public static Dictionary<string, int> cityDayStart = new Dictionary<string, int>();
         public static string start;
+
 
 
         public static void importCity(string dir)
@@ -31,11 +33,27 @@ namespace COVID19
             return cityCollection[cityName];
         }
 
-        public static double I(string cityName,int tCity)
+        public void DayStart(string name,int dayStart)
         {
-            int p = P(cityName);
-            return  p / (1 + (p - 1)*Math.Pow(2.71828,-0.25*tCity));
+            cityDayStart.Add("A", 0);
+            if (!name.Equals("A"))
+            {
+                cityDayStart.Add(name, dayStart);
+            }
         }
+
+        public static int getDayStart(string name)
+        {
+            return cityDayStart[name];
+        }
+
+
+        public static double I(string Name,int totalDay)
+        {
+            return P(Name) / (1 + (P(Name) - 1) * Math.Exp(-0.25 *(totalDay- getDayStart(Name))));
+        }
+
+
 
     }
 }

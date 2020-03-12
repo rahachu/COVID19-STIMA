@@ -9,6 +9,7 @@ namespace COVID19
 {
     class CityLogistic
     {
+
         public static Dictionary<string, string[]> cityEdge = new Dictionary<string, string[]>();
         public static Dictionary<KeyValuePair<String, String>, float> val = new Dictionary<KeyValuePair<string, string>, float>();
         public static Dictionary<string, int> timeFirst = new Dictionary<string, int>();
@@ -82,5 +83,13 @@ namespace COVID19
         {
             return City.I(a, t(a,time)) * Tr(a, b);
         }
+
+        public float getTr(string from, string to)
+        {
+            return val[new KeyValuePair<string,string>(from,to)];
+        }
+
+
+
     }
 }
