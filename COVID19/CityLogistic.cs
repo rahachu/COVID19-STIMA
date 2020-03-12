@@ -26,9 +26,8 @@ namespace COVID19
             for(int i = 0; i < n; i++)
             {
                 string[] a = sr.ReadLine().Split(' ');
-                KeyValuePair<string, string> cityPair = new KeyValuePair<string, string>(a[0],a[1]);
                 cityEdge[a[0]].Append(a[1]);
-                val.Add(cityPair, float.Parse(a[2]));
+                val.Add(new KeyValuePair<string, string>(a[0], a[1]), float.Parse(a[2]));
             }
         }
 
@@ -43,9 +42,9 @@ namespace COVID19
                 string nowVisit = visiting.Dequeue();
                 foreach(string newVisit in cityEdge[nowVisit])
                 {
-                    visiting.Enqueue(newVisit);
                     if (S(nowVisit, newVisit,Time) > 1)
                     {
+                        visiting.Enqueue(newVisit);
                         infected.Append(newVisit);
                         int tFirst = Time;
                         while (S(nowVisit, newVisit, tFirst) > 1)
@@ -83,13 +82,6 @@ namespace COVID19
         {
             return City.I(a, t(a,time)) * Tr(a, b);
         }
-
-        public float getTr(string from, string to)
-        {
-            return val[new KeyValuePair<string,string>(from,to)];
-        }
-
-
 
     }
 }
