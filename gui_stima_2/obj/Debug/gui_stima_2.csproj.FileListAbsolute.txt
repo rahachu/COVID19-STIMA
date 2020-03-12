@@ -1,0 +1,18 @@
+C:\Users\David Gozaly\source\repos\gui_stima_2\gui_stima_2\bin\Debug\gui_stima_2.exe.config
+C:\Users\David Gozaly\source\repos\gui_stima_2\gui_stima_2\bin\Debug\gui_stima_2.exe
+C:\Users\David Gozaly\source\repos\gui_stima_2\gui_stima_2\bin\Debug\gui_stima_2.pdb
+C:\Users\David Gozaly\source\repos\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.csprojAssemblyReference.cache
+C:\Users\David Gozaly\source\repos\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.Form1.resources
+C:\Users\David Gozaly\source\repos\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.Properties.Resources.resources
+C:\Users\David Gozaly\source\repos\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.csproj.GenerateResource.cache
+C:\Users\David Gozaly\source\repos\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.exe
+C:\Users\David Gozaly\source\repos\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.pdb
+C:\Users\raha\Documents\STIMA\gui_stima_2\gui_stima_2\bin\Debug\gui_stima_2.exe.config
+C:\Users\raha\Documents\STIMA\gui_stima_2\gui_stima_2\bin\Debug\gui_stima_2.exe
+C:\Users\raha\Documents\STIMA\gui_stima_2\gui_stima_2\bin\Debug\gui_stima_2.pdb
+C:\Users\raha\Documents\STIMA\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.csprojAssemblyReference.cache
+C:\Users\raha\Documents\STIMA\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.Form1.resources
+C:\Users\raha\Documents\STIMA\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.Properties.Resources.resources
+C:\Users\raha\Documents\STIMA\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.csproj.GenerateResource.cache
+C:\Users\raha\Documents\STIMA\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.exe
+C:\Users\raha\Documents\STIMA\gui_stima_2\gui_stima_2\obj\Debug\gui_stima_2.pdb
