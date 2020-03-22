@@ -33,3 +33,20 @@ C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_s
 C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.csproj.CopyComplete
 C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.GraphViewerGdi.dll
 C:\Users\Rakha Fadhilah\Desktop\Belajar\semester_4\stim\baru\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.GraphViewerGdi.xml
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\bin\Debug\gui_stima_2.exe.config
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\bin\Debug\gui_stima_2.exe
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\bin\Debug\gui_stima_2.pdb
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\bin\Debug\AutomaticGraphLayout.dll
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.dll
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.Drawing.dll
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.GraphViewerGdi.dll
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.xml
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.Drawing.xml
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\bin\Debug\Microsoft.Msagl.GraphViewerGdi.xml
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.csprojAssemblyReference.cache
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.Form1.resources
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.Properties.Resources.resources
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.csproj.GenerateResource.cache
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.csproj.CopyComplete
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.exe
+C:\Users\raha\Documents\GitHub\COVID19-STIMA\gui_stima_2\obj\Debug\gui_stima_2.pdb

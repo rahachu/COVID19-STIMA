@@ -14,10 +14,14 @@ namespace gui_stima_2
 {
     public partial class Form1 : Form
     {
-        public static Microsoft.Msagl.GraphViewerGdi.GViewer viewer = new Microsoft.Msagl.GraphViewerGdi.GViewer();
+        Microsoft.Msagl.GraphViewerGdi.GViewer gViewer;
+        Microsoft.Msagl.Drawing.Graph graf;
 
         public Form1()
         {
+            gViewer = new Microsoft.Msagl.GraphViewerGdi.GViewer();
+            graf = new Microsoft.Msagl.Drawing.Graph("Graph");
+
             InitializeComponent();
         }
 
@@ -73,6 +77,17 @@ namespace gui_stima_2
 
             City.importCity(label9.Text);
             CityLogistic.ImportLogistic(label8.Text);
+            foreach (KeyValuePair<String,List<String>> a in CityLogistic.cityEdge)
+            {
+                Console.WriteLine(a.Key);
+                foreach(String b in a.Value)
+                {
+                    Console.WriteLine("-" + b);
+                    graf.AddEdge(a.Key, b);
+                }
+            }
+            gViewer.Graph = graf;
+            this.panel_msagl.Controls.Add(gViewer);
         }
 
         private void home_2_Click(object sender, EventArgs e)
@@ -101,12 +116,17 @@ namespace gui_stima_2
         private void button_simulate_Click(object sender, EventArgs e)
         {
             CityLogistic.BFS(comboBox1.SelectedIndex);
-            viewer.Graph = CityLogistic.graf;
-            panel_msagl.SuspendLayout();
-            viewer.Dock = DockStyle.Fill;
-            panel_msagl.Controls.Clear();
-            panel_msagl.Controls.Add(viewer);
-            panel_msagl.ResumeLayout();
+            foreach(String a in CityLogistic.infected)
+            {
+                graf.FindNode(a).Attr.FillColor = Microsoft.Msagl.Drawing.Color.Red;
+            }
+            this.Invoke((MethodInvoker)delegate
+            {
+
+                Microsoft.Msagl.Drawing.Graph tmp = gViewer.Graph;
+                gViewer.Graph = null;
+                gViewer.Graph = tmp; // workarround to force updating
+            });
         }
     }
 }

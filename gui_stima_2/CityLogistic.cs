@@ -11,13 +11,10 @@ namespace gui_stima_2
 {
     class CityLogistic
     {
-        public static Graph graf = new Graph();
-        public static Dictionary<string, string[]> cityEdge = new Dictionary<string, string[]>();
+        public static Dictionary<string, List<String>> cityEdge = new Dictionary<string, List<String>>();
         public static Dictionary<KeyValuePair<String, String>, double> val = new Dictionary<KeyValuePair<string, string>, double>();
         public static Dictionary<string, int> timeFirst = new Dictionary<string, int>();
         public static List<string> infected = new List<string>();
-        public static Dictionary<City, List<City>> connection;        
-
 
         public static void ImportLogistic(string dir)
         {
@@ -31,14 +28,13 @@ namespace gui_stima_2
                 string[] a = sr.ReadLine().Split(' ');
                 if (cityEdge.ContainsKey(a[0]))
                 {
-                    cityEdge[a[0]].Append(a[1]);
-                    graf.AddEdge(a[0], a[1]);
+                    cityEdge[a[0]].Add(a[1]);
                 }
                 else
                 {
-                    string[] init = { a[1] };
+                    List<String> init = new List<String>();
+                    init.Add(a[1]);
                     cityEdge.Add(a[0], init);
-                    graf.AddEdge(a[0], a[1]);
                 }
                 val.Add(new KeyValuePair<string, string>(a[0], a[1]), double.Parse(a[2],CultureInfo.InvariantCulture));
             }
@@ -57,7 +53,6 @@ namespace gui_stima_2
                 {
                     if (S(nowVisit, newVisit,Time) > 1)
                     {
-                        graf.FindNode(newVisit).Attr.FillColor = Color.Red;
                         visiting.Enqueue(newVisit);
                         infected.Add(newVisit);
                         int tFirst = Time;
