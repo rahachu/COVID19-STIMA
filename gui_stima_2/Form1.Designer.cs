@@ -227,6 +227,8 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(144, 24);
             this.comboBox1.TabIndex = 2;
+            //button simulate diy
+            this.button_simulate.Click += new System.EventHandler(this.button_simulate_Click);
             // 
             // label5
             // 
@@ -245,7 +247,7 @@
             this.panel_msagl.Location = new System.Drawing.Point(107, 142);
             this.panel_msagl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_msagl.Name = "panel_msagl";
-            this.panel_msagl.Size = new System.Drawing.Size(789, 444);
+            this.panel_msagl.Size = new System.Drawing.Size(789, 789);
             this.panel_msagl.TabIndex = 0;
             this.panel_msagl.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_msagl_Paint);
             // 

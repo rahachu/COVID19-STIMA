@@ -14,7 +14,7 @@ namespace gui_stima_2
         public static Dictionary<string, List<String>> cityEdge = new Dictionary<string, List<String>>();
         public static Dictionary<KeyValuePair<String, String>, double> val = new Dictionary<KeyValuePair<string, string>, double>();
         public static Dictionary<string, int> timeFirst = new Dictionary<string, int>();
-        public static List<string> infected = new List<string>();
+        public static List<string> infected;
 
         public static void ImportLogistic(string dir)
         {
@@ -42,6 +42,7 @@ namespace gui_stima_2
 
         public static void BFS(int Time)
         {
+            infected = new List<string>();
             Queue<string> visiting = new Queue<string>();
             visiting.Enqueue(City.start);
             infected.Add(City.start);

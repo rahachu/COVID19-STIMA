@@ -87,6 +87,7 @@ namespace gui_stima_2
                 }
             }
             gViewer.Graph = graf;
+            gViewer.Size = new Size(600, 500);
             this.panel_msagl.Controls.Add(gViewer);
         }
 
@@ -118,7 +119,17 @@ namespace gui_stima_2
             CityLogistic.BFS(comboBox1.SelectedIndex);
             foreach(String a in CityLogistic.infected)
             {
-                graf.FindNode(a).Attr.FillColor = Microsoft.Msagl.Drawing.Color.Red;
+                Console.WriteLine(a);
+            }
+            foreach(KeyValuePair<String,int> a in City.cityCollection)
+            {
+                if(CityLogistic.infected.Contains(a.Key)){
+                    graf.FindNode(a.Key).Attr.FillColor = Microsoft.Msagl.Drawing.Color.Red;
+                }
+                else
+                {
+                    graf.FindNode(a.Key).Attr.FillColor = Microsoft.Msagl.Drawing.Color.White;
+                }
             }
             this.Invoke((MethodInvoker)delegate
             {
